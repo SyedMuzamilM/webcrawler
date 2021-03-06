@@ -1,0 +1,32 @@
+{
+  "name": "webcrawler",
+  "version": "1.0.0",
+  "description": "I am just building a simple webcrawler for my own use. And also to help me understand about some concepts",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyedMuzamilM/webcrawler.git"
+  },
+  "keywords": [
+    "webcrawler"
+  ],
+  "author": "Syed Muzamil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyedMuzamilM/webcrawler/issues"
+  },
+  "homepage": "https://github.com/SyedMuzamilM/webcrawler#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "node-fetch": "^2.6.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "url-parse": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31"
+  }
+}
