@@ -4,6 +4,8 @@ import * as fs from "fs";
 import path = require('path')
 import parse = require("url-parse");
 
+const args = process.argv.slice(2)
+
 // stores the crawled webpages
 const seenUrls = {};
 
@@ -56,9 +58,8 @@ const crawl = async ({ url, ignore }) => {
                     ignore
                 });
             });
-    });
-}
+    }
 crawl({
-    url: "https://mozilla.org/",
-    ignore: "/search",
-})
+        url: args[0],
+        ignore: args[1],
+    })
